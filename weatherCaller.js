@@ -36,14 +36,13 @@ function updateWeatherDisplay(){
   weatherDisplayedData +="<div class='slds-text-body_slighty_bigger'>" + weatherData.main.humidity + "% humidity</div>";
   weatherDisplayedData +="<div class='slds-text-body_slighty_bigger'>" + weatherData.wind.speed + "mph wind speed</div>";
   document.getElementById("weather-display").innerHTML = weatherDisplayedData;
-
-  if(weatherData.weather[0].description.includes("rain") || weatherData.weather[0].description.includes("storm") || weatherData.weather[0].description.includes("drizzle")){
+  if(weatherData.weather[0].main.includes("Rain") || weatherData.weather[0].main.includes("Thunderstorm") || weatherData.weather[0].main.includes("Drizzle")){
     document.body.style.backgroundImage = "url('assets/weather_backgrounds/rain.jpg')";
   }
-  else if(weatherData.weather[0].description.includes("cloud")){
+  else if(weatherData.weather[0].main.includes("Cloud")|| weatherData.weather[0].main.includes("Atmosphere")){
     document.body.style.backgroundImage = "url('assets/weather_backgrounds/cloudy.jpg')";
   }
-  else if(weatherData.weather[0].description.includes("snow")){
+  else if(weatherData.weather[0].main.includes("Snow")){
     document.body.style.backgroundImage = "url('assets/weather_backgrounds/snow.jpg')";
   }
   else{
