@@ -16355,7 +16355,8 @@ a.slds-button--inverse:focus {
   color: currentColor; }
 
 .slds-nav-vertical__action:hover {
-  background-color: #f3f2f2;
+  background-color: #3f3f3f60;
+  background
   text-decoration: none; }
 
 .slds-nav-vertical__action:focus {
@@ -16364,7 +16365,7 @@ a.slds-button--inverse:focus {
   text-decoration: underline; }
 
 .slds-nav-vertical__action:active {
-  background-color: #ecebea; }
+  background-color: #1f1f1f60; }
 
 .slds-nav-vertical__action:active:focus {
   text-decoration: none; }
@@ -16377,7 +16378,7 @@ a.slds-button--inverse:focus {
  * @modifier
  */
 .slds-nav-vertical__item.slds-is-active .slds-nav-vertical__action {
-  background-color: rgba(21, 137, 238, 0.1); }
+  background-color: #1f1f1f60; }
 
 /**
  * @name base

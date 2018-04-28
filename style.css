@@ -1,7 +1,7 @@
 div.weather-nav{
   position:fixed;
   top: 30%;
-  width: 160px;
+  width: 140px;
 }
 #weather-display {
   position:fixed;

@@ -5,22 +5,22 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body onload="changeWeather('Milwaukee')">
+<body onload="initialize('Milwaukee')">
   <script src="weatherCaller.js" type="text/javascript"> </script>
-  <div class="weather-nav slds-box slds-theme_shade">
+  <div class="weather-nav slds-text-color_inverse">
     <nav class="slds-nav-vertical" aria-label="Sub page">
       <div class="slds-nav-vertical__section">
-        <h2 id="entity-header" class="slds-nav-vertical__title slds-text-title_caps">Locations</h2>
+        <h2 id="entity-header" class="slds-nav-vertical__title slds-text-title_caps slds-text-color_inverse">Locations</h2>
         <ul>
-          <li class="slds-nav-vertical__item slds-is-active"><a href="javascript:changeWeather('Milwaukee');" class="slds-nav-vertical__action" aria-describedby="entity-header" aria-current="page">Milwaukee</a></li>
-          <li class="slds-nav-vertical__item"><a href="javascript:changeWeather('Minneapolis');" class="slds-nav-vertical__action" aria-describedby="entity-header">Minneapolis</a></li>
-          <li class="slds-nav-vertical__item"><a href="javascript:changeWeather('Chicago');" class="slds-nav-vertical__action" aria-describedby="entity-header">Chicago</a></li>
-          <li class="slds-nav-vertical__item"><a href="javascript:changeWeather('Dallas');" class="slds-nav-vertical__action" aria-describedby="entity-header">Dallas</a></li>
+          <li id="Milwaukee_button" class="slds-nav-vertical__item slds-is-active"><a href="javascript:changeWeather('Milwaukee');" class="slds-nav-vertical__action" aria-describedby="entity-header" aria-current="page">Milwaukee</a></li>
+          <li id="Minneapolis_button" class="slds-nav-vertical__item"><a href="javascript:changeWeather('Minneapolis');" class="slds-nav-vertical__action" aria-describedby="entity-header">Minneapolis</a></li>
+          <li id="Chicago_button" class="slds-nav-vertical__item"><a href="javascript:changeWeather('Chicago');" class="slds-nav-vertical__action" aria-describedby="entity-header">Chicago</a></li>
+          <li id="Dallas_button" class="slds-nav-vertical__item"><a href="javascript:changeWeather('Dallas');" class="slds-nav-vertical__action" aria-describedby="entity-header">Dallas</a></li>
         </ul>
       </div>
     </nav>
   </div>
-  <div id="weather-display" class="slds-box slds-theme_shade"></div>
+  <div id="weather-display" class="slds-text-color_inverse"></div>
 
 </body>
 </html>
