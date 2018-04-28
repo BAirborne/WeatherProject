@@ -1,0 +1,11 @@
+div.weather-nav{
+  position:fixed;
+  top: 30%;
+  width: 160px;
+}
+#weather-display {
+  position:fixed;
+  top:30%;
+  left:160px;
+  color: light
+}
