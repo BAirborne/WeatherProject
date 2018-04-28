@@ -20,7 +20,7 @@ function updateWeather(location){
   xhttp.send();
 }
 
-function changeWeather(location){
+function changeWeatherLocation(location){
   var buttonToActive = document.getElementById(currentLocation+"_button");
   buttonToActive.classList.remove("slds-is-active");
 
@@ -37,6 +37,7 @@ function updateWeatherDisplay(){
   weatherDisplayedData +="<div class='slds-text-body_slighty_bigger'>" + weatherData.main.humidity + "% humidity</div>";
   weatherDisplayedData +="<div class='slds-text-body_slighty_bigger'>" + weatherData.wind.speed + "mph wind speed</div>";
   document.getElementById("weather-display").innerHTML = weatherDisplayedData;
+
   if(weatherData.weather[0].description.includes("rain") || weatherData.weather[0].description.includes("storm") || weatherData.weather[0].description.includes("drizzle")){
     document.body.style.backgroundImage = "url('assets/weather_backgrounds/rain.jpg')";
   }
@@ -53,5 +54,5 @@ function updateWeatherDisplay(){
 
 function initialize(location){
   currentLocation = location;
-  changeWeather(location)
+  changeWeatherLocation(location)
 }
