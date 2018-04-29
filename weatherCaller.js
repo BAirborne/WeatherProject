@@ -34,7 +34,7 @@ function updateWeatherDisplay(){
   var weatherDisplayedData = "<div class='slds-text-heading_large'>"+weatherData.main.temp+"&#176;F </div> </div>";
   weatherDisplayedData +="<div class='slds-text-heading_medium'>" + weatherData.weather[0].description + "</div>";
   weatherDisplayedData +="<div class='slds-text-body_slighty_bigger'>" + weatherData.main.humidity + "% humidity</div>";
-  weatherDisplayedData +="<div class='slds-text-body_slighty_bigger'>" + weatherData.wind.speed + "mph wind speed</div>";
+  weatherDisplayedData +="<div class='slds-text-body_slighty_bigger'>" + weatherData.wind.speed + " mph wind speed</div>";
   document.getElementById("weather-display").innerHTML = weatherDisplayedData;
   if(weatherData.weather[0].main.includes("Rain") || weatherData.weather[0].main.includes("Thunderstorm") || weatherData.weather[0].main.includes("Drizzle")){
     document.body.style.backgroundImage = "url('assets/weather_backgrounds/rain.jpg')";
