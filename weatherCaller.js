@@ -15,7 +15,7 @@ function updateWeather(location){
         updateWeatherLoopTimeout = setTimeout(function(){updateWeather(location)}, 600000);
       }
   };
-  xhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q="+location+"&units=imperial&APPID=a64d3d288ff07667926a0d7b29aba4f3", true);
+  xhttp.open("POST", "http://api.openweathermap.org/data/2.5/weather?q="+location+"&units=imperial&APPID=a64d3d288ff07667926a0d7b29aba4f3", true);
   xhttp.send();
 }
 
